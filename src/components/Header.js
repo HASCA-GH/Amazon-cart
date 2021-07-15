@@ -1,5 +1,5 @@
 // type rfce and TAB to get a code snippet
-import './Header.css';
+import '../css/Header.css';
 import React from 'react'
 
 // 1) Standard use of props

@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
-import Header from './Header.js';
+import Header from './components/Header.js';
+import CartItems from './components/CartItems.js';
+import CartTotal from './components/CartTotal.js';
 
 function App() {
   // const firstName = "Humberto";
@@ -13,6 +15,10 @@ function App() {
   return (
     <div className="App">
       <Header title="Amazon Cart" name="Humberto Asca" />
+      <div className="App-main">
+        <CartItems />
+        <CartTotal />
+      </div>
     </div>
   );
 }
