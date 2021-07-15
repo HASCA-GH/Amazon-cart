@@ -1,7 +1,5 @@
 // import logo from './logo.svg';
 import './App.css';
-import './Header.css';
-import Header from './Header.js';
 
 function App() {
   // const firstName = "Humberto";
@@ -13,7 +11,12 @@ function App() {
   // }
   return (
     <div className="App">
-      <Header />
+        <div className="App-header">
+          {/* <h1 style={{color: "red"}}>Amazon Cart</h1> */}
+          {/* <h1 style={h1Style}>Amazon Cart</h1> */}
+          <h1 className="h1-style">Amazon Cart</h1>
+
+        </div>
     </div>
   );
 }

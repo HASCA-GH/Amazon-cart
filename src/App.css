@@ -2,7 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-header {
+  display: flex;
+  justify-content: center;
+  background-color: #0a2546;
+  color: white;
+}
+
+.h1-style {
+  text-decoration: underline;
+} */
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +46,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
