@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Header title="Amazon Cart" name="Humberto Asca" />
       <div className="App-main">
-        <CartItems />
+        <CartItems /> 
         <CartTotal />
       </div>
     </div>

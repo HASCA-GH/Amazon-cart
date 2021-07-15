@@ -1,0 +1,24 @@
+.CartItem {
+  display: flex;
+}
+
+.CartItem-image {
+  background-color: aliceblue;
+  width: 180px;
+  height: 180px;
+}
+
+.CartItem-image img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.CartItem-info {
+  background-color: azure;
+  flex-grow: 1;
+}
+
+.CartItem-price {
+  background-color: burlywood;
+  flex: 0.1;
+}
