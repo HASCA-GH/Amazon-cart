@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
 import './App.css';
-import './Header.css';
 import Header from './Header.js';
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
   // }
   return (
     <div className="App">
-      <Header />
+      <Header title="Amazon Cart" name="Humberto Asca" />
     </div>
   );
 }
