@@ -18,8 +18,13 @@ function CartItem() {
                 </div>
                 <div className="item-actions">
                     <div className="item-quantity">
-                       <select className="" id=""></select>
+                       <select className="" id="">
+                           <option value="1">Qty: 1</option>
+                           <option value="2">Qty: 2</option>
+                           <option value="3">Qty: 3</option>
+                       </select>
                     </div>
+                    <div className="item-actions-divider">|</div>
                     <div className="item-delete">Delete</div>
                 </div>
             </div>
