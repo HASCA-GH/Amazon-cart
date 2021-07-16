@@ -3,6 +3,7 @@ import React from 'react'
 import NumberFormat from 'react-number-format';
 
 function CartTotal({items}) {
+    // console.log("AQUI estoy con item:" , items);
     const getTotalPrice = () => {
         // Init total price to 0
         // Loop through all the items in the cart
@@ -13,7 +14,8 @@ function CartTotal({items}) {
         let totalitems=0;
         items.forEach((item) => {
             total += (item.price * item.quantity)
-            totalitems += item.quantity;
+            totalitems += parseInt(item.quantity, 10);
+            // console.log("AQUI estoy con total items:" , totalitems);
         })
         // total = total.toFixed(2); //redondea a 2 decimales ... rounds to 2 decimals
         return {total, totalitems};

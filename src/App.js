@@ -23,8 +23,13 @@ function App() {
     <div className="App">
       <Header title="Amazon Cart" name="Humberto Asca" />
       <div className="App-main">
-        <CartItems items = {cartItems} /> 
-        <CartTotal items = {cartItems}/>
+        <CartItems 
+          items={cartItems} 
+          setCartItems={setCartItems}
+        /> 
+        <CartTotal 
+          items={cartItems} 
+        />
       </div>
     </div>
   );
