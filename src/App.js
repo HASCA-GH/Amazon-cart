@@ -1,8 +1,13 @@
 // import logo from './logo.svg';
+import React, {useState} from 'react';
+
 import './App.css';
 import Header from './components/Header.js';
 import CartItems from './components/CartItems.js';
 import CartTotal from './components/CartTotal.js';
+
+import data from './Data.js';
+import items from './Data.js';
 
 function App() {
   // const firstName = "Humberto";
@@ -12,11 +17,14 @@ function App() {
   //   color: 'orange',
   //   textDecoration: 'underline'
   // }
+  
+  const [cartItems, setCartItems] = useState(data);
+  console.log("Data cargada de Items: ", cartItems);
   return (
     <div className="App">
       <Header title="Amazon Cart" name="Humberto Asca" />
       <div className="App-main">
-        <CartItems /> 
+        <CartItems itemxxs = {cartItems} /> 
         <CartTotal />
       </div>
     </div>
