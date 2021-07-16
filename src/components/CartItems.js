@@ -2,14 +2,20 @@ import '../css/CartItems.css';
 import React from 'react';
 import CartItem from './CartItem';
 
-function CartItems({itemxxs}) {
-    console.log("Data cargada de Items - INSIDE the CartItems component: ", itemxxs);
+function CartItems({items}) {
+    const index="";
+    console.log("Data cargada de Items - INSIDE the CartItems component: ", items);
     return (
         <div className="CartItems">
             <h1>Shopping Cart</h1>
             <hr />
             <div className="CartItems-items">
-                <CartItem />
+                {items.map((item) => 
+                    <CartItem 
+                        item = {item}
+                        key = {index}
+                    />
+                )}
             </div>
         </div>
     )

@@ -7,7 +7,6 @@ import CartItems from './components/CartItems.js';
 import CartTotal from './components/CartTotal.js';
 
 import data from './Data.js';
-import items from './Data.js';
 
 function App() {
   // const firstName = "Humberto";
@@ -24,7 +23,7 @@ function App() {
     <div className="App">
       <Header title="Amazon Cart" name="Humberto Asca" />
       <div className="App-main">
-        <CartItems itemxxs = {cartItems} /> 
+        <CartItems items = {cartItems} /> 
         <CartTotal />
       </div>
     </div>
