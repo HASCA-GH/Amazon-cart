@@ -22,6 +22,19 @@ function CartItems({items, setCartItems}) {
         // items[index].quantity = e.target.value;
         setCartItems(newItems);
     }
+
+    const deleteItem = (e, indexToDelete) =>{
+        //filter out the items where the item index does not equal to the selected item
+        // console.log("Click en deleted....");
+        // console.log("Index to delete: ", indexToDelete);
+        console.log("Items before deleting 2:", items);
+        const cloneItems = [...items];
+        const newItems = cloneItems.filter((item, index) => {
+            return index != indexToDelete;
+        });
+        console.log("Items after deleting : ", newItems);
+        setCartItems(newItems);
+    }
     return (
         <div className="CartItems">
             <h1>Shopping Cart</h1>
@@ -32,7 +45,8 @@ function CartItems({items, setCartItems}) {
                         index={index}
                         item={item}
                         key={index}
-                        changeItemQuantity= {changeItemQuantity}
+                        changeItemQuantity={changeItemQuantity}
+                        deleteItem={deleteItem}
                     />
                 }) }
             </div>

@@ -3,7 +3,7 @@ import '../css/CartItem.css'
 // https://d500.epimg.net/cincodias/imagenes/2021/04/20/lifestyle/1618942528_752581_1618942625_noticia_normal.jpg
 {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxh3WnJa7k1ZNU6Hcw2rF5f8HTqCvi5KHKg&usqp=CAU" alt=""></img> */}
 {/* <img src="https://d500.epimg.net/cincodias/imagenes/2021/04/20/lifestyle/1618942528_752581_1618942625_noticia_normal.jpg" alt=""></img> */}
-function CartItem({index, item, changeItemQuantity}) {
+function CartItem({index, item, changeItemQuantity, deleteItem}) {
     console.log("Data dentro de particular Item", item);
     return (
         <div className="CartItem">
@@ -31,7 +31,7 @@ function CartItem({index, item, changeItemQuantity}) {
                     </select>
                     </div>
                     <div className="item-actions-divider">|</div>
-                    <div className="item-delete">Delete</div>
+                    <div className="item-delete" onClick={(e)=>deleteItem(e, index)}>Delete</div>
                 </div>
             </div>
             <div className="CartItem-price">${item.price}</div>
